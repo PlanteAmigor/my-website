@@ -23,7 +23,22 @@
     <img src="./images/DLS.jpg" width="127" height="160" />
     <img src="./images/GMen.jpg" width="160" height="160" />
   </p>
-  <button onclick="window.location.href='https://ys.mihoyo.com/?utm_source=yuanshen_web'">点我试试</button>
+  <button onclick="window.open('https://ys.mihoyo.com/?utm_source=yuanshen_web', '_blank')">点我试试
+  </button>
+  <p> 
+    <audio id="myAudio" src="./musics/Liyue.mp3"></audio>
+  <!-- 播放按钮 -->
+  <button onclick="document.getElementById('myAudio').play()">
+    播放音乐
+  </button>
+  <!-- 暂停按钮 -->
+  <button onclick="document.getElementById('myAudio').pause()">
+    暂停音乐
+  </button>
+  <button onclick="let audio=document.getElementById('myAudio'); audio.currentTime=0; audio.play();">
+    重播音乐
+  </button>
+  </p>
 </body>
 
 </html>
