@@ -27,6 +27,7 @@
   </button>
   <p> 
     <audio id="myAudio" src="./musics/Liyue.mp3"></audio>
+    <audio id="myAudioloop" src="./musics/Liyue.mp3" loop></audio>
   <!-- 播放按钮 -->
   <button onclick="document.getElementById('myAudio').play()">
     播放音乐
@@ -38,7 +39,7 @@
   <button onclick="let audio=document.getElementById('myAudio'); audio.currentTime=0; audio.play();">
     重播音乐
   </button>
-  <button onclick="document.getElementById('myAudio').play()">
+  <button onclick="document.getElementById('myAudioloop').play()">
     循环播放
   </button>
   </p>
